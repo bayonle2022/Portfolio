@@ -256,6 +256,11 @@ i:hover{
     margin-right: 100px;
 }
 
+.picture{
+    width: 50%;
+    margin-left: 200px;
+}
+
 .about h1{
     margin-top: 50px;  
     text-align: center;
@@ -351,6 +356,7 @@ button:hover{
     .Hero-Text {
         margin: 0;
     }
+    
 
     .home-img .img-box {
         width: 90vw;
