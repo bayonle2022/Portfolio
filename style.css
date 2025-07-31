@@ -8,6 +8,7 @@
 body{
     background-color: #000000;
     color: #fff;
+    scroll-behavior: smooth; 
 }
 
 ul {
@@ -15,8 +16,9 @@ ul {
   display: grid;
   grid-template-columns: 100px 100px 100px;
   margin-left: 1150px;
-  padding: 10px;
+  padding: 30px;
   font-size: 20px;
+  
 }
 
 a{
@@ -88,7 +90,7 @@ div p{
 
 .work{
     padding-bottom: 315px;
-   
+    background-color: #;
 }
 
 button{
@@ -143,6 +145,147 @@ ul a:hover {
     border: 10px dashed #1a07eb;
     animation: rotate 5s linear infinite;
 }
+ .project-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .project-description {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 16px;
+    }
+
+    .project-section {
+      margin-bottom: 16px;
+    }
+
+    .project-section h4 {
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #333;
+    }
+    .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 50px;
+  color: #111;
+}
+
+.section-description {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  color: #444;
+}
+
+.project-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 0 2rem;
+}
+
+.project-card {
+  background: #fff;
+  padding: 1.8rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.2rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+}
+
+.btn,
+.btn-outline {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn {
+  background-color: #111;
+  color: #fff;
+}
+.project-grid h4{
+    color: #111;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+
+.btn:hover {
+  background-color: #333;
+}
+
+.btn-outline {
+  border: 1px solid #111;
+  color: #111;
+}
+
+.btn-outline:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+
+    .project-section ul {
+      padding-left: 20px;
+      color: #444;
+    }
+
+    .project-links a {
+      display: inline-block;
+      margin-right: 16px;
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .project-links a:hover {
+      text-decoration: underline;
+    }
 
 .home-img .img-box::after {
     border-color: transparent;
@@ -192,6 +335,20 @@ i:hover{
     z-index: 4;
     text-align: center;
 }
+.work-item:hover{
+
+    animation: heroHover 0.5s ease-in-out forwards;
+}
+@keyframes heroHover {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+
 
 .work-container img{
     width: 100%;
@@ -223,6 +380,38 @@ i:hover{
     z-index: 3;
     text-decoration: none;
 }
+.footer {
+  background-color: #0d1117;
+  color: #ffffff;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer .social-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer .social-links a {
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: #ffffff;
+}
+
 
 .about{
     display: grid;
@@ -286,7 +475,6 @@ button:hover{
         margin: 10px;
         text-align: center;
     }
-    
 
     .Hero-Text p{
         margin-left: auto;
@@ -295,7 +483,7 @@ button:hover{
 
     .Hero-Section h1, h3{
         color: #fff;
-        font-size: 40px;
+        font-size: 60px;
         padding: 10px;
         overflow: hidden;
         /* white-space: nowrap; */
@@ -309,12 +497,12 @@ button:hover{
         color: #fff;
         animation: typing 5s steps(10, end), blink-caret 0.75s step-start 2s;
         animation-fill-mode: forwards;
-        font-size: 20px;
+        font-size: 40px;
         margin: 0 auto;
     }
     
     @keyframes typing {
-        from { width: 2%; }
+        from { width: 30%; }
         to { width: 80%; }
     }
     
@@ -349,6 +537,25 @@ button:hover{
         grid-template-columns: repeat(2, auto);
         justify-content: center;
     }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        text-align: center;
+        padding: 10px 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -356,9 +563,41 @@ button:hover{
         grid-template-columns: 1fr;
         text-align: center;
     }
+    nav{
+        display: none;
+    }
 
+    .Hero-Section h1{
+        font-size: 30px;
+    }
+    .Hero-Section h3{
+        font-size: 20px;
+    }
     .Hero-Text {
         margin: 0;
+    }
+    .about{
+    display: block;
+    align-content: center;
+justify-content: center;
+    }
+    .about img{
+        display: none;
+    }
+    .about-text{
+        width: 70%;
+        height: 60%;
+        margin: 0 60px;
+
+    }
+    
+    .about-text p {
+        width: 80%;
+        line-height: 25px;
+    font-size: 10px;
+   
+    margin-left: 10px;
+    color: #000000;
     }
 
     .home-img .img-box {
@@ -378,39 +617,26 @@ button:hover{
         justify-content: center;
     }
 
-    .about{
-        position: relative; top: 700px; right: 150px;
-    }
-    .about-text{
-        width: 300px;
-        height: 500px;
-    }
-    .about p{
-        font-size: 12px;
-        line-height: 20px;
-        width: 250px;
-    }
-    .picture{
-        width: 0;
-        height: 0;
-    }
-    .work p{
-        text-align: center;
-        font-size: 16px;
-        position: relative;right: 150px;
-    }
-    .work-item{
-        margin-left: 50px;
+    .nav-toggle {
+        display: flex;
     }
 
-    nav{
-        visibility: hidden;
-        position: relative; right: 1000px;
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        text-align: center;
+        padding: 10px 0;
     }
 }
 
-
-    
 @media (max-width: 480px) {
     .Hero-Section {
         grid-template-columns: 1fr;
@@ -437,5 +663,24 @@ button:hover{
     ul {
         grid-template-columns: 1fr;
         justify-content: center;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        text-align: center;
+        padding: 10px 0;
     }
 }

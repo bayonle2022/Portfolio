@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,22 +13,25 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css"
     />
+    <!-- AOS Animation CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="style.css" />
     <title>portfolio</title>
   </head>
   <body>
-    <nav>
+    <nav data-aos="fade-down">
       <ul>
         <li><a href="index.html">Home</a></li>
-     
         <li><a href="#projects">Projects</a></li>
         <li><a href="#about">About</a></li>
       </ul>
     </nav>
+
     <div class="Hero-Section">
-      <div class="Hero-Text">
+      <div class="Hero-Text" data-aos="fade-right">
         <h1>Lijadu Bayonle</h1>
-        <h3>i'm a Full-Stack Developer</h3>
+        <h3>I'm a front-end Developer</h3>
         <p>
           Hello, I'm Lijadu Bayonle, a passionate and innovative full stack
           developer with a knack for crafting scalable, efficient, and
@@ -37,16 +39,20 @@
           development, I bring ideas to life through clean code, intuitive
           design, and meticulous attention to detail."
         </p>
-        <button>Download Cv</button>
-        <i class="fi fi-brands-facebook"></i>
-        <i class="fi fi-brands-instagram"></i>
-        <i class="fi fi-brands-twitter"></i>
-        <i class="fi fi-brands-linkedin"></i>
-        <i class="fi fi-brands-whatsapp"></i>
-        <i class="fi fi-brands-github"></i>
+        <div>
+          <a href="files/Lijadu Bayonle resume.pdf"><button>Download Cv</button></a>
+          <a href="https://wa.link/qeflnx"><button>Contact Me</button></a>
+        </div>
+        <br />
+       <a href="https://www.facebook.com/yourprofile"> <i class="fi fi-brands-facebook"></i></a>
+        <a href="https://www.instagram.com/yourprofile"><i class="fi fi-brands-instagram"></i></a>
+        <a href="https://twitter.com/yourprofile"><i class="fi fi-brands-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/yourprofile"><i class="fi fi-brands-linkedin"></i></a>
+        <a href="https://wa.link/qeflnx"><i class="fi fi-brands-whatsapp"></i></a>
+        <a href="https://github.com/yourprofile"><i class="fi fi-brands-github"></i></a>
       </div>
 
-      <div class="home-img">
+      <div class="home-img" data-aos="fade-left">
         <div class="img-box">
           <div class="img-item">
             <img src="img/passport-removebg-preview.png" alt="" />
@@ -54,59 +60,87 @@
         </div>
       </div>
     </div>
-    <div class="work">
-      <h1 style="text-align: center;">My Work</h1>
-      <p style="text-align: center; margin-left: 200px;">
-        Here are a few design projects I've worked on recently. Want to see
-        more? Email me.
-      </p>
 
-      <!--  -->
-      <div class="work-container" id="projects">
-        <div class="work-item work-item1">
-          <a href="https://bayonle2022.github.io/Drum"><img src="img/Untitled design (1).png"id="pic1" alt=""></a>
-         
-        </div>
-        <div class="work-item work-item2">
-          <a href="https://bayonle2022.github.io/loop-studio-landing-page/">
-          <img src="img/Untitled design (2).png"class="pic2" alt="" >
-        </a>
-         
-        </div>
-        <div class="work-item   work-item3">
-          <a href="https://bayonle2022.github.io/Tindog-project/">
-          <img src="img/Untitled design (3).png" class="pic3" alt="">
-        </a>
-        </div>
-        <div class="work-item   work-item3">
-          <a href="https://bayonle2022.github.io/Tindog-project/">
-          <img src="img/Untitled design (3).png" class="pic3" alt="">
-        </a>
-        </div>
+   
+      
+<section class="work" id="projects" data-aos="fade-up">
+  <h2 class="section-title">My Work</h2>
+  <p class="section-description">
+    A few of the projects I've built recently — from tools to games and experiments.
+  </p>
+
+  <div class="project-grid">
+    <div class="project-card" data-aos="zoom-in">
+      <h4>LexFind Dictionary</h4>
+      <p>A dictionary web app with word definitions and examples using an API.</p>
+      <div class="project-links">
+        <a href="#" class="btn">Live Demo</a>
+        <a href="#" class="btn-outline">GitHub</a>
       </div>
     </div>
+
+    <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+      <h4>Order My Food web app</h4>
+      
+      <p>A web app for ordering food online with a user-friendly interface.</p>
+      <div class="project-links">
+        <a href="https://bayonle2022.github.io/Order-Food/" class="btn">Live Demo</a>
+        <a href="https://github.com/bayonle2022/Order-Food" class="btn-outline">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+      <h4>Mini Guess Game</h4>
+      <p>JavaScript game where players guess numbers and get instant feedback.</p>
+      <div class="project-links">
+        <a href="#" class="btn">Live Demo</a>
+        <a href="#" class="btn-outline">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
     <div class="about" id="about">
-      <div class="picture">
-        <img src="img/OEMBZ20-removebg-preview.png "  alt="" >
+      <div class="picture" data-aos="fade-right">
+        <img src="img/OEMBZ20-removebg-preview.png" alt="" />
       </div>
 
-      <div class="about-text" >
+      <div class="about-text" data-aos="fade-left">
         <h1>About Me</h1>
         <p>
           I’m a creative and detail-driven frontend developer with a passion for
           crafting visually stunning and highly functional user interfaces.
           Specializing in turning design concepts into responsive, interactive,
-          and user-friendly web experiences,  My expertise lies in modern frontend
+          and user-friendly web experiences, My expertise lies in modern frontend
           technologies like HTML, CSS, JavaScript, and frameworks such as React,
-          Vue.js, and Angular. Collaboration is key to my process, 
-          and I enjoy working
-          closely with designers, backend developers, and stakeholders to ensure
-          every project aligns with its goals. When I’m not coding, you’ll find
-          me experimenting with new design tools, contributing to open-source
-          projects, or exploring ways to push the boundaries of what’s possible
-          on the web. Let’s build something beautiful together!
+          Vue.js, and Angular. Collaboration is key to my process, and I enjoy
+          working closely with designers, backend developers, and stakeholders
+          to ensure every project aligns with its goals. When I’m not coding,
+          you’ll find me experimenting with new design tools, contributing to
+          open-source projects, or exploring ways to push the boundaries of what’s
+          possible on the web. Let’s build something beautiful together!
         </p>
       </div>
     </div>
+    <footer class="footer">
+  <div class="footer-container">
+    <p>&copy; 2025 Bayonle Lijadu. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://github.com/bayonle2022" target="_blank">GitHub</a>
+      <a href="mailto:lijadubayonle10@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- AOS JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: false
+      });
+    </script>
   </body>
 </html>
